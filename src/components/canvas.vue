@@ -20,9 +20,7 @@ export default {
   },
     methods: {
         changeColor: function (newColor){
-          console.log('DD1 '+this.color)
           this.color = newColor
-          console.log('DD2 '+this.color)
         }
     },
     mounted(){
