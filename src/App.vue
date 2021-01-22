@@ -33,7 +33,7 @@
   <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
 </svg>
         </button>
-        <button class="next" @click="createRandomId()">Nächstes Beispiel</button>
+        <button class="next" @click="createRandomId()">Nächste Beispiel</button>
       </div>
     </footer>
   </div>
@@ -113,6 +113,12 @@ export default {
   src: url('./assets/fonts/roboto-light.ttf');
 }
 
+@media (max-width: 1440px) {
+  footer{
+    padding-top: 300px;
+  }
+}
+
 body{
   background: url('./assets/grid.png');
   font-family: 'roboto-light';
@@ -184,14 +190,15 @@ h3{
   padding-top: 180px;
   padding-bottom: 20px;
   font-family: 'roboto-thin';
+  z-index: 6;
 }
 
 .modal .myPhoto{
-  max-height: 200px;
+  max-height: 22vh;
   border-radius: 50%;
   margin-bottom: 50px;
   position: absolute;
-  top: 20px;
+  top: 2vh;
 }
 
 .about{
@@ -213,14 +220,15 @@ h3{
 .canvas-component{
   position: absolute;
   z-index: 1;
+  height: 100vh;
 }
 
 footer{
-  padding-top: 700px;
+  padding-top: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1780px;
+  width: 90vw;
 }
 
 .exercise-select, .about{
